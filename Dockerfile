@@ -5,6 +5,7 @@ WORKDIR /app
 
 COPY requirements.txt .
 COPY model_tf.keras .
+COPY scaler.joblib .  
 COPY app.py .
 
 RUN python -m pip install --upgrade pip && \
